@@ -1,60 +1,101 @@
 from rest_framework import serializers
 from .models import *
-from django.contrib.auth.models import User
-from django.contrib.auth.models import Group
-from django.contrib.auth.models import Permission
 
+
+# ==========================
+# Suspect Serializer
+# ==========================
 class SuspectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Suspect
-        fields = '__all__'
+        fields = "__all__"
 
+
+# ==========================
+# Victim Serializer
+# ==========================
 class VictimSerializer(serializers.ModelSerializer):
     class Meta:
         model = Victim
-        fields = '__all__'
+        fields = "__all__"
 
-class TheftCaseSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TheftCase
-        fields = '__all__'
 
-class StolenItemSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = StolenItem
-        fields = '__all__'
-
-class HistorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = History
-        fields = '__all__'
-
-class NotificationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Notification
-        fields = '__all__'
-
-class PoliceCenterSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = PoliceCenter
-        fields = '__all__'
-
+# ==========================
+# Police Officer Serializer
+# ==========================
 class PoliceOfficerSerializer(serializers.ModelSerializer):
     class Meta:
         model = PoliceOfficer
-        fields = '__all__'
+        fields = "__all__"
 
-class InvestigationReportSerializer(serializers.ModelSerializer):
+
+# ==========================
+# Theft Case Serializer
+# ==========================
+class TheftCaseSerializer(serializers.ModelSerializer):
     class Meta:
-        model = InvestigationReport
-        fields = '__all__'
+        model = TheftCase
+        fields = "__all__"
 
-class EvidenceSerializer(serializers.ModelSerializer):
+
+# ==========================
+# Stolen Item Serializer
+# ==========================
+class StolenItemSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Evidence
-        fields = '__all__'
+        model = StolenItem
+        fields = "__all__"
 
+
+# ==========================
+# Police Center Serializer
+# ==========================
+class PoliceCenterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PoliceCenter
+        fields = "__all__"
+
+
+# ==========================
+# Witness Serializer
+# ==========================
 class WitnessSerializer(serializers.ModelSerializer):
     class Meta:
         model = Witness
-        fields = '__all__'
+        fields = "__all__"
+
+
+# ==========================
+# Evidence Serializer
+# ==========================
+class EvidenceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Evidence
+        fields = "__all__"
+
+
+# ==========================
+# Investigation Report Serializer
+# ==========================
+class InvestigationReportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InvestigationReport
+        fields = "__all__"
+
+
+# ==========================
+# Notification Serializer
+# ==========================
+class NotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Notification
+        fields = "__all__"
+
+
+# ==========================
+# History Serializer
+# ==========================
+class HistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = History
+        fields = "__all__"
