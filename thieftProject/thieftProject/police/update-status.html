@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Update Status | Police - NSTRTS</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+
+</head>
+
+
+<body>
+
+<div class="sidebar">
+
+
+    <div class="logo">
+
+        <img src="../assets/images/logo.png" alt="Logo">
+
+        <h2>NSTRTS</h2>
+
+    </div>
+
+
+
+    <ul>
+
+
+        <li>
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="all-reports.html">
+
+                <i class="fa-solid fa-folder-open"></i>
+
+                All Reports
+
+            </a>
+
+        </li>
+
+
+
+        <li class="active">
+
+            <a href="update-status.html">
+
+                <i class="fa-solid fa-pen-to-square"></i>
+
+                Update Status
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="profile.html">
+
+                <i class="fa-solid fa-user"></i>
+
+                Profile
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="../login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+
+    </ul>
+
+
+</div>
+
+
+<div class="main">
+
+<div class="header">
+
+    <h2>
+
+        Update Report Status
+
+    </h2>
+
+
+    <p>
+
+        Update investigation progress and case information.
+
+    </p>
+
+
+</div>
+
+
+<div class="section">
+
+
+<h2>Report Summary</h2>
+
+<table class="details-table">
+
+<tr>
+
+<th>Report ID</th>
+
+<td>TR001</td>
+
+</tr>
+
+
+
+<tr>
+
+<th>Citizen Name</th>
+
+<td>John Citizen</td>
+
+</tr>
+
+
+
+<tr>
+
+<th>Theft Type</th>
+
+<td>Mobile Phone Theft</td>
+
+</tr>
+
+
+
+<tr>
+
+<th>Location</th>
+
+<td>Stone Town, Zanzibar</td>
+
+</tr>
+
+
+
+<tr>
+
+<th>Current Status</th>
+
+<td>
+
+<span class="pending">
+
+Pending
+
+</span>
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+</div>
+
+
+
+<div class="section">
+
+
+
+<h2>
+
+Change Status
+
+</h2>
+
+
+
+
+<form id="statusForm">
+
+<div class="input-group">
+
+
+<label>
+
+New Status
+
+</label>
+
+<select>
+
+
+<option value="">
+
+Select Status
+
+</option>
+
+
+<option>
+
+Submitted
+
+</option>
+
+
+<option>
+
+Under Review
+
+</option>
+
+
+<option>
+
+Under Investigation
+
+</option>
+
+
+<option>
+
+Resolved
+
+</option>
+
+
+<option>
+
+Rejected
+
+</option>
+
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+
+Assigned Officer
+
+</label>
+
+
+
+<input
+
+type="text"
+
+value="Officer John"
+
+>
+
+
+
+</div>
+
+
+<div class="input-group">
+
+
+<label>
+
+Investigation Date
+
+</label>
+
+<input
+
+type="date"
+
+>
+
+</div>
+
+<div class="input-group">
+
+
+<label>
+
+Police Remarks
+
+</label>
+
+<textarea
+
+rows="6"
+
+placeholder="Write investigation notes here">
+
+</textarea>
+
+</div>
+
+
+<button type="submit">
+
+
+<i class="fa-solid fa-save"></i>
+
+
+Save Update
+
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+<!-- BACK BUTTON -->
+
+
+<div class="section">
+
+
+<a href="report-details.html" class="btn-secondary">
+
+
+<i class="fa-solid fa-arrow-left"></i>
+
+
+Back To Report
+
+
+</a>
+
+
+
+</div>
+
+</div>
+
+
+
+<script src="../assets/js/report.js"></script>
+
+</body>
+
+</html>

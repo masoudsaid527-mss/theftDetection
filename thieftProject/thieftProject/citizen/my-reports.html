@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Reports | NSTRTS</title>
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- CSS -->
+   <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<div class="sidebar">
+
+
+    <div class="logo">
+
+
+        <h2>NSTRTS</h2>
+
+    </div>
+
+
+
+    <ul>
+
+
+        <li>
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="report-theft.html">
+
+                <i class="fa-solid fa-file-circle-plus"></i>
+
+                Report Theft
+
+            </a>
+
+        </li>
+
+
+
+        <li class="active">
+
+            <a href="my-reports.html">
+
+                <i class="fa-solid fa-folder-open"></i>
+
+                My Reports
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="profile.html">
+
+                <i class="fa-solid fa-user"></i>
+
+                Profile
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="../login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+
+    </ul>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ================= MAIN ================= -->
+
+
+<div class="main">
+
+
+
+    <div class="header">
+
+
+        <h2>
+
+            My Theft Reports
+
+        </h2>
+
+
+        <p>
+
+            Track and manage your submitted reports.
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- SUMMARY CARDS -->
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+
+            <i class="fa-solid fa-file-lines"></i>
+
+
+            <div>
+
+                <h3 data-report-count="total">0</h3>
+
+                <p>Total Reports</p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+
+            <i class="fa-solid fa-clock"></i>
+
+
+            <div>
+
+                <h3 data-report-count="Submitted">0</h3>
+
+                <p>Pending</p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+
+            <div>
+
+                <h3 data-report-count="Investigation">0</h3>
+
+                <p>Investigation</p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+
+            <i class="fa-solid fa-circle-check"></i>
+
+
+            <div>
+
+                <h3 data-report-count="Resolved">0</h3>
+
+                <p>Resolved</p>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- REPORT TABLE -->
+
+
+    <div class="section">
+
+
+        <h2>Submitted Reports</h2>
+
+
+
+
+        <table>
+
+
+            <thead>
+
+
+                <tr>
+
+                    <th>Report ID</th>
+
+                    <th>Category</th>
+
+                    <th>Item</th>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+
+                </tr>
+
+
+            </thead>
+
+
+
+
+
+            <tbody id="reportsTableBody">
+
+
+
+                <tr>
+
+
+                    <td>
+
+                        #NST001
+
+                    </td>
+
+
+                    <td>
+
+                        Mobile Theft
+
+                    </td>
+
+
+                    <td>
+
+                        iPhone 15
+
+                    </td>
+
+
+                    <td>
+
+                        07 July 2026
+
+                    </td>
+
+
+                    <td>
+
+                        <span class="pending">
+
+                            Submitted
+
+                        </span>
+
+                    </td>
+
+
+                    <td>
+
+
+                        <a href="report-details.html">View</a>
+
+
+                    </td>
+
+
+                </tr>
+
+
+
+
+
+                <tr>
+
+
+                    <td>
+
+                        #NST002
+
+                    </td>
+
+
+                    <td>
+
+                        Vehicle Theft
+
+                    </td>
+
+
+                    <td>
+
+                        Toyota Car
+
+                    </td>
+
+
+                    <td>
+
+                        02 July 2026
+
+                    </td>
+
+
+                    <td>
+
+                        <span class="investigation">
+
+                            Investigation
+
+                        </span>
+
+                    </td>
+
+
+                    <td>
+
+
+                        <a href="report-details.html">View</a>
+
+
+                    </td>
+
+
+                </tr>
+
+
+
+
+
+                <tr>
+
+
+                    <td>
+
+                        #NST003
+
+                    </td>
+
+
+                    <td>
+
+                        Document Theft
+
+                    </td>
+
+
+                    <td>
+
+                        Passport
+
+                    </td>
+
+
+                    <td>
+
+                        28 June 2026
+
+                    </td>
+
+
+                    <td>
+
+                        <span class="completed">
+
+                            Resolved
+
+                        </span>
+
+                    </td>
+
+
+                    <td>
+
+
+                        <a href="report-details.html">View</a>
+
+
+                    </td>
+
+
+                </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+
+
+
+    </div>
+
+
+
+
+
+</div>
+
+<script src="../assets/js/report.js"></script>
+
+</body>
+
+</html>

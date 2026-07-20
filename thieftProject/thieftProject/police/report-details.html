@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Details | Police - NSTRTS</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="../assets/images/logo.png" alt="Logo">
+
+        <h2>NSTRTS</h2>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="all-reports.html">
+                <i class="fa-solid fa-folder-open"></i>
+                All Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="update-status.html">
+                <i class="fa-solid fa-pen-to-square"></i>
+                Update Status
+            </a>
+        </li>
+
+        <li>
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+        </li>
+
+        <li>
+            <a href="../login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+    <div class="header">
+
+        <h2>Report Details</h2>
+
+        <p>Review the submitted theft report.</p>
+
+    </div>
+
+    <!-- REPORT INFORMATION -->
+
+    <div class="section">
+
+        <h2>Report Information</h2>
+
+        <table class="details-table">
+
+            <tr>
+                <th>Report ID</th>
+                <td>TR001</td>
+            </tr>
+
+            <tr>
+                <th>Citizen Name</th>
+                <td>John Citizen</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>john@email.com</td>
+            </tr>
+
+            <tr>
+                <th>Phone Number</th>
+                <td>+255700000000</td>
+            </tr>
+
+            <tr>
+                <th>Theft Type</th>
+                <td>Mobile Phone Theft</td>
+            </tr>
+
+            <tr>
+                <th>Incident Date</th>
+                <td>07 July 2026</td>
+            </tr>
+
+            <tr>
+                <th>Location</th>
+                <td>Stone Town, Zanzibar</td>
+            </tr>
+
+            <tr>
+                <th>Current Status</th>
+                <td>
+                    <span class="pending">Pending</span>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- INCIDENT DESCRIPTION -->
+
+    <div class="section">
+
+        <h2>Incident Description</h2>
+
+        <p>
+            The victim reported that a mobile phone was stolen while travelling on public transport.
+            The suspect is unknown and the theft occurred at approximately 8:30 PM near Stone Town market.
+        </p>
+
+    </div>
+
+    <!-- EVIDENCE -->
+
+    <div class="section">
+
+        <h2>Uploaded Evidence</h2>
+
+        <img src="../assets/images/hero.png"
+             alt="Evidence"
+             class="evidence-image">
+
+    </div>
+
+    <!-- POLICE NOTES -->
+
+    <div class="section">
+
+        <h2>Police Investigation Notes</h2>
+
+        <textarea rows="6" placeholder="Write investigation notes here..."></textarea>
+
+    </div>
+
+    <!-- ACTION BUTTONS -->
+
+    <div class="section">
+
+        <a href="update-status.html" class="btn-primary">
+
+            <i class="fa-solid fa-pen"></i>
+
+            Update Report Status
+
+        </a>
+
+        <a href="all-reports.html" class="btn-secondary">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Reports
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/report.js"></script>
+
+</body>
+
+</html>

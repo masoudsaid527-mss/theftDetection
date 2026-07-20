@@ -1,0 +1,396 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+
+}
+
+
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+
+.sidebar{
+
+    position:fixed;
+    width:260px;
+    height:100vh;
+    background:linear-gradient(180deg,#1E3A8A,#2563EB);
+    padding:25px 20px;
+    color:white;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:40px;
+
+}
+
+
+
+.logo i{
+
+    font-size:32px;
+
+}
+
+
+
+.logo h2{
+
+    font-size:25px;
+
+}
+
+
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+
+
+.sidebar ul li{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:14px;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+
+}
+
+
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+
+
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+
+.main{
+
+    margin-left:260px;
+    padding:30px;
+
+}
+
+
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+
+.header{
+
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.header h2{
+
+    color:#1E3A8A;
+    margin-bottom:8px;
+
+}
+
+
+
+.header p{
+
+    color:#777;
+
+}
+
+
+
+
+
+/* ==========================================
+   FORM BOX
+========================================== */
+
+
+.form-box{
+
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    max-width:900px;
+
+}
+
+
+
+
+
+/* ==========================================
+   INPUT GROUP
+========================================== */
+
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.input-group label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+    color:#1E3A8A;
+
+}
+
+
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    font-family:'Poppins',sans-serif;
+    transition:.3s;
+
+}
+
+
+
+.input-group textarea{
+
+    resize:none;
+
+}
+
+
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#2563EB;
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+
+
+
+
+/* ==========================================
+   UPLOAD BOX
+========================================== */
+
+
+.upload-box{
+
+    border:2px dashed #2563EB;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    background:#f8fbff;
+    transition:.3s;
+
+}
+
+
+
+.upload-box:hover{
+
+    background:#eef5ff;
+
+}
+
+
+
+.upload-box i{
+
+    display:block;
+    font-size:45px;
+    color:#2563EB;
+    margin-bottom:15px;
+
+}
+
+
+
+.upload-box input{
+
+    border:none;
+    padding:10px;
+
+}
+
+
+
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+
+button{
+
+    width:100%;
+    padding:16px;
+    border:none;
+    background:#1E3A8A;
+    color:white;
+    font-size:17px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#2563EB;
+    transform:translateY(-3px);
+
+}
+
+
+
+button i{
+
+    margin-right:8px;
+
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:768px){
+
+
+    .sidebar{
+
+        width:80px;
+
+    }
+
+
+
+    .logo h2{
+
+        display:none;
+
+    }
+
+
+
+    .sidebar a{
+
+        font-size:0;
+
+    }
+
+
+
+    .sidebar ul li a{
+
+        justify-content:center;
+
+    }
+
+
+
+    .main{
+
+        margin-left:80px;
+        padding:20px;
+
+    }
+
+
+
+    .form-box{
+
+        padding:20px;
+
+    }
+
+
+}

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Reports | Policy Maker | NSTRTS</title>
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+
+<img src="../assets/images/logo.png" alt="Logo">
+
+
+<h2>NSTRTS</h2>
+
+
+</div>
+
+
+
+
+
+<ul>
+
+
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="analytics.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Analytics
+
+</a>
+
+</li>
+
+
+
+
+
+<li class="active">
+
+<a href="reports.html">
+
+<i class="fa-solid fa-file-lines"></i>
+
+Reports
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="statistics.html">
+
+<i class="fa-solid fa-chart-column"></i>
+
+Statistics
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= MAIN ================= -->
+
+
+<div class="main">
+
+
+
+<div class="header">
+
+
+<h2>
+
+National Reports
+
+</h2>
+
+
+<p>
+
+Review theft reports for policy planning and decision making.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= FILTER ================= -->
+
+
+<div class="section">
+
+
+<h2>
+
+Filter Reports
+
+</h2>
+
+
+
+
+<div class="search-filter">
+
+
+
+<select>
+
+
+<option>
+
+All Regions
+
+</option>
+
+
+<option>
+
+Zanzibar
+
+</option>
+
+
+<option>
+
+Dar es Salaam
+
+</option>
+
+
+<option>
+
+Arusha
+
+</option>
+
+
+</select>
+
+
+
+
+
+<select>
+
+
+<option>
+
+All Theft Types
+
+</option>
+
+
+<option>
+
+Mobile Theft
+
+</option>
+
+
+<option>
+
+Vehicle Theft
+
+</option>
+
+
+<option>
+
+Property Theft
+
+</option>
+
+
+</select>
+
+
+
+
+
+<input type="text" placeholder="Search report ID">
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= REPORT TABLE ================= -->
+
+
+<div class="section">
+
+
+<h2>
+
+Reports Summary
+
+</h2>
+
+
+
+
+<table>
+
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+
+Report ID
+
+</th>
+
+
+<th>
+
+Region
+
+</th>
+
+
+<th>
+
+Theft Type
+
+</th>
+
+
+<th>
+
+Date
+
+</th>
+
+
+<th>
+
+Status
+
+</th>
+
+
+<th>
+
+Action
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+
+<tbody>
+
+
+
+
+<tr>
+
+
+<td>
+
+NST001
+
+</td>
+
+
+<td>
+
+Zanzibar
+
+</td>
+
+
+<td>
+
+Mobile Theft
+
+</td>
+
+
+<td>
+
+07 July 2026
+
+</td>
+
+
+<td>
+
+
+<span class="pending">
+
+Pending
+
+</span>
+
+
+</td>
+
+
+<td>
+
+
+<a href="#" class="btn-view">
+
+View
+
+</a>
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+NST002
+
+</td>
+
+
+<td>
+
+Dar es Salaam
+
+</td>
+
+
+<td>
+
+Vehicle Theft
+
+</td>
+
+
+<td>
+
+02 July 2026
+
+</td>
+
+
+<td>
+
+
+<span class="investigation">
+
+Investigation
+
+</span>
+
+
+</td>
+
+
+<td>
+
+
+<a href="#" class="btn-view">
+
+View
+
+</a>
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+NST003
+
+</td>
+
+
+<td>
+
+Arusha
+
+</td>
+
+
+<td>
+
+Laptop Theft
+
+</td>
+
+
+<td>
+
+28 June 2026
+
+</td>
+
+
+<td>
+
+
+<span class="completed">
+
+Completed
+
+</span>
+
+
+</td>
+
+
+<td>
+
+
+<a href="#" class="btn-view">
+
+View
+
+</a>
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= INSIGHT ================= -->
+
+
+<div class="section">
+
+
+<h2>
+
+Policy Recommendation
+
+</h2>
+
+
+
+
+<p>
+
+Current data indicates that urban regions experience higher theft rates.
+Policy makers should focus on improving public awareness, surveillance
+systems and community security programs.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script src="../assets/js/report.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,186 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* ==========================
+   LOGIN BOX
+========================== */
+
+.login-box{
+    width:900px;
+    background:#fff;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+
+.left{
+    background:linear-gradient(135deg,#1E3A8A,#2563EB);
+    color:white;
+    padding:60px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ==========================
+   RIGHT SIDE
+========================== */
+
+.right{
+    padding:50px 40px;
+}
+
+.right h2{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#2563EB;
+}
+
+/* ==========================
+   REMEMBER
+========================== */
+
+.remember{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.remember a{
+    text-decoration:none;
+    color:#2563EB;
+}
+
+.remember a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#1E3A8A;
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2563EB;
+}
+
+/* ==========================
+   REGISTER LINK
+========================== */
+
+.register{
+    margin-top:25px;
+    text-align:center;
+}
+
+.register a{
+    text-decoration:none;
+    color:#2563EB;
+    font-weight:600;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.login-box{
+    grid-template-columns:1fr;
+}
+
+.left{
+    display:none;
+}
+
+.right{
+    padding:35px 25px;
+}
+
+}

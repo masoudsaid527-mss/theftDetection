@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Police Dashboard | NSTRTS</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="../assets/images/logo.png" alt="Logo">
+
+        <h2>NSTRTS</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="all-reports.html">
+                <i class="fa-solid fa-folder-open"></i>
+                All Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="update-status.html">
+                <i class="fa-solid fa-pen-to-square"></i>
+                Update Status
+            </a>
+        </li>
+
+        <li>
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+        </li>
+
+        <li>
+            <a href="../login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="main">
+
+
+    <div class="header">
+
+        <div>
+            <h2>Police Dashboard</h2>
+            <p>Manage theft reports and investigations.</p>
+        </div>
+
+    </div>
+
+    <!-- STATISTICS -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h3>245</h3>
+
+            <p>Total Reports</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-hourglass-half"></i>
+
+            <h3>62</h3>
+
+            <p>Pending Cases</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h3>101</h3>
+
+            <p>Investigations</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>82</h3>
+
+            <p>Resolved Cases</p>
+
+        </div>
+
+    </div>
+
+    <!-- QUICK ACTIONS -->
+
+    <div class="section">
+
+        <h2>Quick Actions</h2>
+
+        <div class="actions">
+
+            <a href="all-reports.html">
+                <i class="fa-solid fa-folder-open"></i>
+                View Reports
+            </a>
+
+            <a href="update-status.html">
+                <i class="fa-solid fa-pen"></i>
+                Update Status
+            </a>
+
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                My Profile
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- RECENT REPORTS -->
+
+    <div class="section">
+
+        <h2>Recent Theft Reports</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Report ID</th>
+
+                    <th>Citizen</th>
+
+                    <th>Category</th>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>TR001</td>
+
+                    <td>John Citizen</td>
+
+                    <td>Phone Theft</td>
+
+                    <td>07 Jul 2026</td>
+
+                    <td><span class="pending">Pending</span></td>
+
+                    <td>
+                        <a href="report-details.html">
+                            View
+                        </a>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>TR002</td>
+
+                    <td>Asha Omar</td>
+
+                    <td>Vehicle Theft</td>
+
+                    <td>05 Jul 2026</td>
+
+                    <td><span class="investigation">Investigation</span></td>
+
+                    <td>
+                        <a href="report-details.html">
+                            View
+                        </a>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>TR003</td>
+
+                    <td>Ali Hassan</td>
+
+                    <td>Laptop Theft</td>
+
+                    <td>02 Jul 2026</td>
+
+                    <td><span class="completed">Resolved</span></td>
+
+                    <td>
+                        <a href="report-details.html">
+                            View
+                        </a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/report.js"></script>
+</body>
+
+</html>

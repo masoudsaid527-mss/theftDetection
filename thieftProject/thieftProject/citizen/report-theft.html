@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Theft | NSTRTS</title>
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../assets/css/report.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<div class="sidebar">
+
+
+    <div class="logo">
+
+
+        <h2>NSTRTS</h2>
+
+    </div>
+
+
+
+    <ul>
+
+
+        <li>
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+
+
+        <li class="active">
+
+            <a href="report-theft.html">
+
+                <i class="fa-solid fa-file-circle-plus"></i>
+
+                Report Theft
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="my-reports.html">
+
+                <i class="fa-solid fa-folder-open"></i>
+
+                My Reports
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="profile.html">
+
+                <i class="fa-solid fa-user"></i>
+
+                Profile
+
+            </a>
+
+        </li>
+
+
+
+        <li>
+
+            <a href="../login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+
+    </ul>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+
+<div class="main">
+
+
+
+    <div class="header">
+
+
+        <h2>
+
+            Report Theft Incident
+
+        </h2>
+
+
+        <p>
+
+            Fill in accurate information about the stolen item.
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="form-box">
+
+
+
+        <form id="reportForm">
+
+
+
+
+
+            <!-- Theft Category -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Theft Category
+
+                </label>
+
+
+                <select id="category">
+
+
+                    <option value="">
+
+                        Select Category
+
+                    </option>
+
+
+                    <option>
+
+                        Mobile Phone Theft
+
+                    </option>
+
+
+                    <option>
+
+                        Vehicle Theft
+
+                    </option>
+
+
+                    <option>
+
+                        Money Theft
+
+                    </option>
+
+
+                    <option>
+
+                        Document Theft
+
+                    </option>
+
+
+                    <option>
+
+                        Other
+
+                    </option>
+
+
+                </select>
+
+
+            </div>
+
+
+
+
+
+
+            <!-- Item Name -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Item Name
+
+                </label>
+
+
+                <input
+
+                type="text"
+
+                id="itemName"
+
+                placeholder="Example: iPhone 15, Toyota Car">
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Serial Number -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Serial Number / Identification Number
+
+                </label>
+
+
+                <input
+
+                type="text"
+
+                id="serial"
+
+                placeholder="Enter serial number if available">
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Date -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Date of Theft
+
+                </label>
+
+
+                <input
+
+                type="date"
+
+                id="date">
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Time -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Time of Theft
+
+                </label>
+
+
+                <input
+
+                type="time"
+
+                id="time">
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Location -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Location of Incident
+
+                </label>
+
+
+                <input
+
+                type="text"
+
+                id="location"
+
+                placeholder="Enter place where theft happened">
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Description -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Incident Description
+
+                </label>
+
+
+                <textarea
+
+                id="description"
+
+                rows="6"
+
+                placeholder="Explain what happened...">
+
+                </textarea>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Witness -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Witness Information
+
+                </label>
+
+
+                <input
+
+                type="text"
+
+                id="witness"
+
+                placeholder="Name or contact of witness">
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Evidence -->
+
+
+            <div class="input-group">
+
+
+                <label>
+
+                    Upload Evidence
+
+                </label>
+
+
+
+                <div class="upload-box">
+
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+
+                    <input
+
+                    type="file"
+
+                    id="evidence"
+
+                    accept="image/*,video/*">
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Submit -->
+
+
+            <button type="submit">
+
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+
+                Submit Report
+
+
+            </button>
+
+
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+<script src="../assets/js/report.js"></script>
+</body>
+</html>
